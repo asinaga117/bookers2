@@ -1,0 +1,17 @@
+ 
+        <li>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to "新規登録", new_user_registration_path %>
+        </li>
+        
+        <li>
+          <%= link_to "ログイン" , new_user_session_path %>
+        </li>
+      <% end %>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
