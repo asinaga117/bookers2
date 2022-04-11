@@ -1,6 +1,5 @@
-      <h3>Title</h3>
-        <%= f.text_field :title, class: "form-control book_title" %>
-
-
-      <h3>Opinion</h3>
-        <%= f.text_area :opinion, class: "form-group" %>
+        <div class="row">
+          <%= link_to edit_book_path do %>
+          
+          <% end %>
+        </div>
