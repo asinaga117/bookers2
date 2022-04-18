@@ -1,21 +1,3 @@
-<table class="table">
-
-        <thead>
-          <tr>
-            <th>image</th>
-            <th>name</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @users.each do |user| %>
-          <tr>
-            <th><%= image_tag user.get_profile_image(50,50) %></th>
-            <th><%= user.name %></th>
-            <th><%= link_to "Show", user_path(user.id) %></th>
-          </tr>
-          <% end %>
-        </tbody>
-
-      </table>
+%= link_to edit_book_path(@books.id) do %>
+              <label class="btn btn-sm btn-success">Edit</label>
+              <% end %>

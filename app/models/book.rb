@@ -11,5 +11,8 @@ class Book < ApplicationRecord
     end
     profile_image.variant(resize_to_limit: [width, height]).processed
   end
+  
+  validates :title, presence: true
+  validates :body, presence: true, length: { maximum: 200}
 
 end
